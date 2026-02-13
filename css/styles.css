@@ -1404,3 +1404,38 @@ img {
         transform: rotate(360deg);
     }
 }
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    /* Login & Signup forms */
+    .form-input {
+        width: 90%;          /* Make inputs take more space on small screens */
+        font-size: 16px;
+    }
+
+    .auth-logo h1 {
+        font-size: 24px;     /* Smaller logo text */
+    }
+
+    /* Buttons */
+    .form-button, .password-toggle {
+        width: 100%;         /* Buttons stretch to fit smaller screen */
+    }
+
+    /* Feed posts */
+    .post {
+        flex-direction: column;  /* Stack content vertically */
+        padding: 10px;
+    }
+
+    .post img {
+        width: 100%;             /* Make images responsive */
+        height: auto;
+    }
+
+    /* Toast container */
+    .toast-container {
+        top: 10px;
+        right: 10px;
+        width: 90%;             /* Fit smaller screen */
+    }
+}
